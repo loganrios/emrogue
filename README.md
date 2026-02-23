@@ -1,5 +1,23 @@
 # pokeemerald-expansion
 
+Logan's fork of [Lemonancy's continuing updates](https://github.com/lemonancy/lemon-emerald-rogue).
+
+## Building and Installing (macOS)
+
+You need [devkitARM-r62](https://wii.leseratte10.de/devkitPro/devkitARM/r62%20%282023-08-04%29/devkitARM-r62-1-osx_arm64.pkg.tar.zst) which you can install with `dkp-pacman -U <file>`. Unfortunately, DKP does not provide binary builds of their old releases, and I couldn't recompile from source on my own. Much gratitude to the archivist!
+
+You'll also need [poryscript v3.0.2](https://github.com/huderlem/poryscript/releases/download/3.0.2/poryscript-mac.zip) via:
+1. Unzip
+2. Rename to `poryscript-linux`
+3. Drop into `tools/poryscript` (full path is `tools/poryscript/poryscript-linux`).
+
+After that, it should be as simple as:
+
+```sh
+$ make
+$ mgba lemon-emerald-rogue.gba
+```
+
 ## What is pokeemerald-expansion?
 
 pokeemerald-expansion is a decomp hack base project based off pret's [pokeemerald](https://github.com/pret/pokeemerald) decompilation project. It's recommended that any new projects that plan on using it, to clone this repository instead of pret's vanilla repository, as we regurlarly incorporate pret's documentation changes. This is ***NOT*** a standalone romhack, and as such, most features will be unavailable and/or unbalanced if played as is.
